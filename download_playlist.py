@@ -8,7 +8,7 @@ import yt_dlp
 # ============================================================
 
 PLAYLIST_URL = (
-    "https://www.youtube.com/playlist?list=PL8QbsxALagIye_7H3p97-UANM5pkN7EQN"
+    "https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID"
 )
 
 DOWNLOAD_DIR = "downloads"
