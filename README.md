@@ -24,12 +24,17 @@ Start by cloning the repository to your local machine:
 ```bash
 git clone https://github.com/Maharab2134/YouTube-Playlist-Downloader.git
 cd YouTube-Playlist-Downloader
-run commend python download_playlist.py
 ```
 
 ### 2. Create a Virtual Environment
 
 Using a virtual environment ensures that the project’s dependencies do not interfere with your system’s Python packages.
+
+On Debian/Ubuntu, install the venv package first if `python3 -m venv` reports that `ensurepip` is unavailable:
+
+```bash
+sudo apt install python3.13-venv
+```
 
 ```bash
 # On Linux/macOS
@@ -56,14 +61,8 @@ myenv\Scripts\activate
 Once the virtual environment is activated, install the required dependencies:
 
 ```bash
-
-# On Linux/macOS
-python3 -m venv myenv
-
-# On Windows
-python -m venv myenv
-
-pip install yt-dlp
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
 ### 5. Install ffmpeg (Optional but recommended)
